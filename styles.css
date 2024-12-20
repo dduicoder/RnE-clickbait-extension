@@ -1,0 +1,37 @@
+.hover-box {
+  position: absolute;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.05);
+  z-index: 10000;
+  opacity: 0;
+  max-width: 20rem;
+  font-size: 14px;
+  color: #333;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hover-box.show {
+  opacity: 1;
+}
+
+#check-button {
+  background-color: rgb(50, 50, 50);
+  color: white;
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+#check-button:hover {
+  background-color: rgb(10, 10, 10);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
+}
+
+#check-button:active {
+  transform: scale(0.9);
+}
